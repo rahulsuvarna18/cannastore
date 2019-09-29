@@ -27,6 +27,10 @@
     inline_label: 'I am a business',
     required: true,
     autofocus: true %>
+    <%= f.input :avatar,
+    required: false,
+    autofocus: true,
+    input_html: { autocomplete: "avatar" }%>
   </div>
 
   <div class="form-actions">
