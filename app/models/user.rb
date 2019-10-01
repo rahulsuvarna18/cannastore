@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :stores
-  validates :first_name, :last_name, :email, :password, :avatar, presence: true
+  validates :first_name, :last_name, :email, :password, presence: true
   validates :email, uniqueness: true
   mount_uploader :avatar, PhotoUploader
 end

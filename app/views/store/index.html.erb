@@ -1,0 +1,7 @@
+<h1>CannaStores</h1>
+
+<% @stores.each do |store| %>
+    <%= store.name %>
+    <%= store.location %>
+    <% link_to 'Products', product_path , class: "btn btn-primary" %>
+<% end %> 
